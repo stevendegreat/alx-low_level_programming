@@ -10,24 +10,24 @@
  */
 int main(void)
 {
-    int digit1, digit2; // Variables to store the digits
+    int digit1, digit2; /* Variables to store the digits */
 
     for (digit1 = 0; digit1 <= 9; digit1++)
     {
         for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
         {
-            putchar(digit1 + '0'); // Print first digit
-            putchar(digit2 + '0'); // Print second digit
+            putchar(digit1 + '0'); /* Print first digit */
+            putchar(digit2 + '0'); /* Print second digit */
 
             if (digit1 < 8 || digit2 < 9)
             {
-                putchar(','); // Print comma
-                putchar(' '); // Print space
+                putchar(','); /* Print comma */
+                putchar(' '); /* Print space */
             }
         }
     }
 
-    putchar('\n'); // Print newline
+    putchar('\n'); /* Print newline */
 
     return (0);
 }
