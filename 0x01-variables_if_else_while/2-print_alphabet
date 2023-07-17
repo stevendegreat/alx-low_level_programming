@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * main - Entry point
@@ -8,12 +7,18 @@
  */
 int main(void)
 {
-	int lowerCase = 'a';
+	int i;
 
-	while (lowerCase <= 'z')
+	/* Print lowercase alphabet */
+	for (i = 97; i <= 122; i++)
 	{
-		putchar(lowerCase);
-		lowerCase++;
+		putchar(i);
+	}
+
+	/* Print uppercase alphabet */
+	for (i = 65; i <= 90; i++)
+	{
+		putchar(i);
 	}
 
 	putchar('\n');
