@@ -2,25 +2,34 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
     int n;
-
+    int lastnum;
+    
     srand(time(0));
     n = rand() - RAND_MAX / 2;
     
-    int lastDigit = abs(n) % 10;
+    lastnum = n % 10;
     
-    printf("The string Last digit of %d is ", n);
-    
-    if (lastDigit > 5) {
-        printf("and is greater than 5\n");
-    } else if (lastDigit == 0) {
-        printf("and is 0\n");
-    } else {
-        printf("and is less than 6 and not 0\n");
+    if (lastnum > 5)
+    {
+        printf("Last digit of %d is %d and is greater than 5\n", n, lastnum);
+    }
+    else if (lastnum == 0)
+    {
+        printf("Last digit of %d is %d and is 0\n", n, lastnum);
+    }
+    else if (lastnum < 6 && lastnum != 0)
+    {
+        printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastnum);
     }
     
     return (0);
 }
+
