@@ -8,17 +8,21 @@
 int main(void)
 {
 	int i;
+	char lowercase = 'a';
+	char uppercase = 'A';
 
 	/* Print lowercase alphabet */
-	for (i = 97; i <= 122; i++)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(i);
+		putchar(lowercase);
+		lowercase++;
 	}
 
 	/* Print uppercase alphabet */
-	for (i = 65; i <= 90; i++)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(i);
+		putchar(uppercase);
+		uppercase++;
 	}
 
 	putchar('\n');
