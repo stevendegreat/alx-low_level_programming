@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-    int digit1, digit2, digit3; / Variables to store the digits /
+    int digit1, digit2, digit3; /* Variables to store the digits */
 
     for (digit1 = 0; digit1 <= 9; digit1++)
     {
@@ -18,20 +18,20 @@ int main(void)
         {
             for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
             {
-                putchar(digit1 + '0'); / Print first digit /
-                putchar(digit2 + '0'); / Print second digit /
-                putchar(digit3 + '0'); / Print third digit /
+                putchar(digit1 + '0'); /* Print first digit */
+                putchar(digit2 + '0'); /* Print second digit */
+                putchar(digit3 + '0'); /* Print third digit */
 
                 if (digit1 < 7 || digit2 < 8 || digit3 < 9)
                 {
-                    putchar(','); / Print comma /
-                    putchar(' '); / Print space /
+                    putchar(','); /* Print comma */
+                    putchar(' '); /* Print space */
                 }
             }
         }
     }
 
-    putchar('\n'); / Print newline /
+    putchar('\n'); /* Print newline */
 
     return (0);
 }
