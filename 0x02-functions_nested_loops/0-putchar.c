@@ -1,27 +1,25 @@
-#include "main.h"
+int _putchar(char c);
 
-/**
- * main - Entry point of the program
- *
- * Description: Prints "_putchar" followed by a new line using the _putchar function.
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-char str[] = "_putchar\n";
-int i;
+void print_alphabet(void);
 
-for (i = 0; str[i] != '\0'; i++)
-{
-_putchar(str[i]);
-}
+void print_alphabet_x10(void);
 
-return (0);
-}
+int _islower(int c);
 
-/* _putchar function definition */
-int _putchar(char c)
-{
-return write(1, &c, 1);
-}
+int _isalpha(int c);
+
+int print_sign(int n);
+
+int _abs(int);
+
+int print_last_digit(int);
+
+void stephen_njuguna(void);
+
+void times_table(void);
+
+int add(int, int);
+
+void print_to_98(int n);
+
+void print_times_table(int n);
