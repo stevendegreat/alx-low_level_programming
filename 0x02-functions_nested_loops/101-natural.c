@@ -1,22 +1,22 @@
-#include <studio.h>
+#include <stdio.h>
 
 /**
- * main - print the sum of all multiple 3 or 5  up to 1024
- * return: Always (success)
+ * main - print the sum of all multiples of 3 or 5 up to 1024
+ * Return: Always 0 (success)
  */
-
 int main(void)
+{
+int i, z = 0;
 
+for (i = 0; i < 1024; i++)
 {
-int i, 2=0;
-while  (i < 1024)
+if ((i % 3 == 0) || (i % 5 == 0))
 {
-if ((i % 3 ==0) || (i % 5 ==0))
-	z+=i;
+z += i;
 }
-i++;
 }
+
 printf("%d\n", z);
 return (0);
-
 }
+
