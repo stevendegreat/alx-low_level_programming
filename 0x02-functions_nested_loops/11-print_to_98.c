@@ -12,31 +12,31 @@ if (n <= 98)
 {
 for (; n <= 98; n++)
 {
-        if (n == 98)
+if (n == 98)
 {
-        printf("%d", n);
-        printf("\n");
-        break;
+printf("%d", n);
+printf("\n");
+break;
 }
 else
 {
-        printf("%d, ", n);
+printf("%d, ", n);
 }
 }
 }
 else
 {
-        for (; n >= 98; n--)
+for (; n >= 98; n--)
 {
-        if (n == 98)
+if (n == 98)
 {
-        printf("%d", n);
-        printf("\n");
-        break;
+printf("%d", n);
+printf("\n");
+break;
 }
 else
 {
-        printf("%d, ", n);
+printf("%d, ", n);
 }
 }
 }
