@@ -1,21 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - print the sum of all multiples of 3 or 5 up to 1024
- * Return: Always 0 (success)
+ * main - prints the first 52 fibonacci numbers
+ * Return: Nothing!
  */
+
 int main(void)
 {
-int i, z = 0;
+int i = 0;
+long j = 1, k = 2;
 
-for (i = 0; i < 1024; i++)
+while (i < 50)
 {
-if ((i % 3 == 0) || (i % 5 == 0))
+if (i == 0)
+printf("%ld", j);
+else if (i == 1)
+printf(", %ld", k);
+else
 {
-z += i;
+k += j;
+j = k - j;
+printf(", %ld", k);
 }
+++i;
 }
-
-printf("%d\n", z);
+printf("\n");
 return (0);
 }
