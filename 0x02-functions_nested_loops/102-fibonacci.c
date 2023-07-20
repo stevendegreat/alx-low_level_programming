@@ -9,7 +9,7 @@ int main(void)
     int i = 0;
     long j = 1, k = 2;
 
-    while (i < 52)
+    while (i < 51) // Changed loop condition to i < 51
     {
         if (i == 0)
             printf("%ld", j);
