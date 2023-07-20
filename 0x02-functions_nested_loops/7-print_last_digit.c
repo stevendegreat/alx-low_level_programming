@@ -1,20 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *  _abs - computes the absolute value of an integer
- *  @c: the numbeer computed
- *
- * Return: Absolute value of number or 0
+ * print_last_digit - function that prints the last digit of a number.
+ * @n: the no. to be considered
+ * Return: value of the last digit
  */
-int _abs(int c)
-{
-        if (c < 0)
-{
-        int abs_val;
+int print_last_digit(int n)
 
-        abs_val = c * -1;
-        return (abs_val);
+{
+        int last;
+
+        last = n % 10;
+        if (last < 0)
+{
+        last = last * -1;
 }
-return (c);
+        _putchar(last + '0');
+        return (last);
 }
