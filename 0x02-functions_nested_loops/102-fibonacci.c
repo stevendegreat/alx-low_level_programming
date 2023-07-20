@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include  <stdio.h>
 
 /**
  * main - print the first 52 fibonacci numbers
@@ -11,7 +11,6 @@ int main (void)
 
 int i = 0;
 long j = 1, k =2;
-
 while (i < 54 )
 {
 if (i == 0)
