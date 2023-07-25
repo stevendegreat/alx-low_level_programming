@@ -1,19 +1,22 @@
 #include "main.h"
 
 /**
- * print_rev - unction that prints a string, in reverse.
- * @s: the used string reference point
+ * print_rev - Prints a string in reverse.
+ * @s: Pointer to the string to be printed in reverse.
  *
- * return: 0
+ * Return: void
  */
-
 void print_rev(char *s)
 {
-int start = 0;
+    int length = 0;
 
-while (s[start])
-start++;
-while (start++)
-_putchar(s[start]);
-_putchar('\n');
+    /* Find the length of the string */
+    while (s[length])
+        length++;
+
+    /* Print the string in reverse */
+    while (length--)
+        _putchar(s[length]);
+
+    _putchar('\n');
 }
