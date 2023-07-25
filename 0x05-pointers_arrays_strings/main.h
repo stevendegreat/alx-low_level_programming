@@ -1,5 +1,19 @@
 #ifndef MAIN_H
 #define MAIN_H
+/**
+ * _putchar - Writes a character to stdout.
+ * @c: The character to be written.
+ *
+ * Return: On success, 1. On error, -1.
+ */
+int _putchar(char c);
+
+/**
+ * _puts - Prints a string followed by a new line.
+ * @str: Pointer to the string to be printed.
+ *
+ * Return: void
+ */
 
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
@@ -13,4 +27,4 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 
-#endif
+#endif /* MAIN_H */
