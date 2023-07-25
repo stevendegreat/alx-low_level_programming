@@ -2,45 +2,52 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**
- * main - generates random valid passwords for the
- * program 101-crackme.
- * Return: Always 0.
- */
+/ A function that generates a random valid password for the program 101-crackme /
+char *generate_password(void)
+{
+char *password;
+int i, sum, random;
+
+/ Allocate memory for the password /
+password = malloc(sizeof(char) * 100);
+if (password == NULL)
+return (NULL);
+
+/ Initialize the random number generator /
+srand(time(NULL));
+
+/ Generate characters until the sum is 2772 /
+sum = 0;
+i = 0;
+while (sum < 2772)
+{
+/ Generate a random character between ' ' and '~' /
+random = rand() % ('~' - ' ' + 1) + ' ';
+/ Add the character to the password and update the sum /
+password[i] = random;
+sum += random;
+i++;
+}
+/ Adjust the last character to make the sum exactly 2772 /
+password[i - 1] = 2772 - sum + random;
+/ Terminate the string /
+password[i] = '\0';
+
+return (password);
+}
+/ A main function that prints a random valid password /
 int main(void)
 {
-        char password[84];
-        int index = 0, sum = 0, diff_half1, diff_half2;
+char *password;
 
-        srand(time(0));
+/ Generate and print the password /
+password = generate_password();
+if (password == NULL)
+return (1);
+printf("%s\n", password);
 
-        while (sum < 2772)
-        {
-                password[index] = 33 + rand() % 94;
-                sum += password[index++];
-        }
-        password[index] = '\0';
-        if (sum != 2772)
-        {
-                diff_half1 = (sum - 2772) / 2;
-                diff_half2 = (sum - 2772) / 2;
-                if ((sum - 2772) % 2 != 0)
-                diff_half1++;
-                for (index = 0; password[index]; index++)
-                {
-                if (password[index] >= (33 + diff_half1))
-                {
-                        password[index] -= diff_half2;
-                        break;
-                }
-                }
-                for (index = 0; password[index]; index++)
-                {
-                        if (password[index] >= (33 + diff_half2))
-                        password[index] -= diff_half2;
-                        break;
-                }
-        }
-printf("%s", password);
+/ Free the memory /
+free(password);
+
 return (0);
 }
