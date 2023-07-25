@@ -8,15 +8,15 @@
  */
 void print_rev(char *s)
 {
-    int length = 0;
+int length = 0;
 
-    /* Find the length of the string */
-    while (s[length])
-        length++;
+/* Find the length of the string */
+while (s[length])
+length++;
 
-    /* Print the string in reverse */
-    while (length--)
-        _putchar(s[length]);
+/* Print the string in reverse */
+while (length--)
+_putchar(s[length]);
 
-    _putchar('\n');
+_putchar('\n');
 }
