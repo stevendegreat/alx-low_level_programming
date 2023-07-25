@@ -22,6 +22,13 @@ int _putchar(char c);
  * Return: void
  */
 
+ /**
+ * rev_string - Reverses a string in place.
+ * @s: Pointer to the string to be reversed.
+ *
+ * Return: void
+ */
+
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
