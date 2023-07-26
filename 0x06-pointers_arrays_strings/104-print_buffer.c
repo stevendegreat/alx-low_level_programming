@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
 * print_buffer - Prints the content of a buffer.
 * @b: The buffer to print.
 * @size: The number of bytes to print.
 */
-
 void print_buffer(char *b, int size)
 {
 int i, j;
@@ -28,7 +26,7 @@ printf("  ");
 if (j % 2)
 putchar(' ');
 }
-I
+
 for (j = 0; j < 10; j++)
 {
 if (i + j < size)
