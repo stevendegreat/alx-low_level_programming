@@ -19,7 +19,7 @@ char *cap_string(char *s)
     while (s[i] != '\0')
     {
         /* Check for separators, and capitalize the next character if it's a lowercase letter */
-        if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';'
+6-cap_string.c        if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';'
             || s[i] == '.' || s[i] == '!' || s[i] == '?' || s[i] == '"' || s[i] == '('
             || s[i] == ')' || s[i] == '{' || s[i] == '}')
         {
