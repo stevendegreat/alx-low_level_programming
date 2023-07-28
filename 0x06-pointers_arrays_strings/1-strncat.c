@@ -10,23 +10,23 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-char *result = dest;
+    char *result = dest;
 
-/* Find the end of the destination string */
-while (*dest)
-dest++;
+    /* Find the end of the destination string */
+    while (*dest)
+        dest++;
 
-/* Copy at most n bytes from src to dest */
-while (*src && n > 0)
-{
-*dest = *src;
-dest++;
-src++;
-n--;
-}
+    /* Copy at most n bytes from src to dest */
+    while (*src && n > 0)
+    {
+        *dest = *src;
+        dest++;
+        src++;
+        n--;
+    }
 
-/* Append null terminator to the concatenated string */
-*dest = '\0';
+    /* Append null terminator to the concatenated string */
+    *dest = '\0';
 
-return result;
+    return result;
 }
