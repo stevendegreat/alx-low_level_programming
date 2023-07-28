@@ -20,6 +20,5 @@ for (; count_of_bytes < n; count_of_bytes++)
 {
 dest[count_of_bytes] = '\0';
 }
-
 return dest;
 }
