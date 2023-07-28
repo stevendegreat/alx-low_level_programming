@@ -28,5 +28,5 @@ char *_strncat(char *dest, char *src, int n)
     /* Append null terminator to the concatenated string */
     *dest = '\0';
 
-    return result;
+    return (result);
 }
