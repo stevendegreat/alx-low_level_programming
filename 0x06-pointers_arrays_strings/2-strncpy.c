@@ -23,4 +23,3 @@ dest[count_of_bytes] = '\0';
 
 return dest;
 }
-
