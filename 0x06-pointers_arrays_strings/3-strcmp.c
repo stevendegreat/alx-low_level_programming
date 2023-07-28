@@ -6,10 +6,9 @@
  * @s1: Pointer to the first string.
  * @s2: Pointer to the second string.
  *
- * Return: Integer value less than 0 if s1 is less than s2,
- *         Integer value greater than 0 if s1 is greater than s2,
- *         0 if the strings are equal.
+ * Return: Integer value less than 0 if s1 is less than s2,Integer value greater than 0 if s1 is greater than s2,0 if the strings are equal.
  */
+
 int _strcmp(char *s1, char *s2)
 {
 int counter = 0;
