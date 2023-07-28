@@ -11,7 +11,8 @@
  * Return: A pointer to the result, or 0 if the result
  * cannot be stored in r.
  */
-char *infinite_add(char *n1, char *n2, char *r, int size_r)
+char *infinite_add(char *n1, char *n2, char *r,
+		int size_r)
 {
 int carry = 0;
 int len1 = 0, len2 = 0, max_len = 0;
