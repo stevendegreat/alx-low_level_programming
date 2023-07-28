@@ -18,5 +18,5 @@ counter++;
 }
 compare_value = s1[counter] - s2[counter];
 
-return compare_value;
+return (compare_value);
 }
