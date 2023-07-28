@@ -2,28 +2,41 @@
 
 /**
  * leet - Encodes a string into 1337.
- * @str: The input string.
  *
- * Return: A pointer to the resulting string str.
+ * Letters 'a' and 'A' should be replaced by '4'.
+ * Letters 'e' and 'E' should be replaced by '3'.
+ * Letters 'o' and 'O' should be replaced by '0'.
+ * Letters 't' and 'T' should be replaced by '7'.
+ * Letters 'l' and 'L' should be replaced by '1'.
+ *
+ * @s: Pointer to the string to be encoded.
+ *
+ * Return: Pointer to the encoded string.
  */
-char leet(char str)
+char *leet(char *s)
 {
-char *ptr = str;
-char *leet_chars = "aAeEoOtTlL";
-char *leet_codes = "4433007711";
+int string_length = 0;
+int leetcount;
+char leetletters[] = "aAeEoOtTlL";
+char leetNum[] = "4433007711";
 
-while (*ptr)
+/* Scan through the string */
+while (s[string_length] != '\0')
 {
-int i;
+leetcount = 0;
 
-for (i = 0; leet_chars[i]; i++)
+/* Check whether leetletter is found */
+while (leetcount < 10)
 {
-if (*ptr == leet_chars[i])
-*ptr = leet_codes[i];
+if (leetletters[leetcount] == s[string_length])
+{
+s[string_length] = leetNum[leetcount];
+break; /* Added break to avoid unnecessary iterations */
+}
+leetcount++;
+}
+string_length++;
 }
 
-ptr++;
-}
-
-return (str);
+return s;
 }
