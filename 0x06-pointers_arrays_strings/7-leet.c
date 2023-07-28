@@ -15,28 +15,28 @@
  */
 char *leet(char *s)
 {
-    int string_length = 0;
-    int leetcount;
-    char leetletters[] = "aAeEoOtTlL";
-    char leetNum[] = "4433007711";
+int string_length = 0;
+int leetcount;
+char leetletters[] = "aAeEoOtTlL";
+char leetNum[] = "4433007711";
 
-    /* Scan through the string */
-    while (s[string_length] != '\0')
-    {
-        leetcount = 0;
+/* Scan through the string */
+while (s[string_length] != '\0')
+{
+leetcount = 0;
 
-        /* Check whether leetletter is found */
-        while (leetcount < 10)
-        {
-            if (leetletters[leetcount] == s[string_length])
-            {
-                s[string_length] = leetNum[leetcount];
-                break; /* Added break to avoid unnecessary iterations */
-            }
-            leetcount++;
-        }
-        string_length++;
-    }
+/* Check whether leetletter is found */
+while (leetcount < 10)
+{
+if (leetletters[leetcount] == s[string_length])
+{
+s[string_length] = leetNum[leetcount];
+break; /* Added break to avoid unnecessary iterations */
+}
+leetcount++;
+}
+string_length++;
+}
 
-    return s;
+return s;
 }
