@@ -52,7 +52,7 @@ if (k != -1)
 for (i = max_len; i >= 0; i--)
 r[i + 1] = r[i];
 r[0] = carry + '0';
-r[max_len + 1] = '\0';
+r[max_len + 2] = '\0'; /* Added one more character for null terminator */
 }
 else
 {
