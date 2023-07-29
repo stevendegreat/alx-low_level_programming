@@ -6,7 +6,12 @@
  * @src: Source string pointer.
  * @n: Number of bytes to be used.
  *
- * Return: Pointer to destination string dest.
+ * Description:
+ *    This function copies the first @n bytes of string @src to the
+ *    destination string @dest. If @src is less than @n bytes long, the
+ *    remaining bytes in @dest are filled with null bytes.
+ *
+ * Return: Pointer to destination string @dest.
  */
 char *_strncpy(char *dest, const char *src, int n)
 {
@@ -21,5 +26,5 @@ dest[count_of_bytes] = '\0';
 }
 
 /* Break the line to avoid exceeding 80 characters */
-return (dest);
+return dest;
 }
