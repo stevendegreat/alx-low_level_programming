@@ -38,5 +38,5 @@ leetcount++;
 string_length++;
 }
 
-return s;
+return (s);
 }
