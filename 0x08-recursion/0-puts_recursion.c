@@ -10,7 +10,8 @@ void _puts_recursion(char *s)
 if (*s != '\0') /* check if string is not empty */
 {
 _putchar(*s); /* print the first character */
-_puts_recursion(s + 1); /* call the function recursively with the next character */
+_puts_recursion(s + 1); /* call the function recursively with the next */
+/* character */
 }
 else
 {
