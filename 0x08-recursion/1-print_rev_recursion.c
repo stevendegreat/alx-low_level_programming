@@ -8,7 +8,8 @@ void _print_rev_recursion(char *s)
 {
 if (*s != '\0') /* check if string is not empty */
 {
-_print_rev_recursion(s + 1); /* call the function recursively with the next character */
+_print_rev_recursion(s + 1); /* call the function recursively with the */
+/* next character */
 _putchar(*s); /* print the current character */
 }
 }
