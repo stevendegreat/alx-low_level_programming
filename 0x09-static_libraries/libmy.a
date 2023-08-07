@@ -1,0 +1,456 @@
+Step 1 
+create a .c file
+Step2 
+add this functions to the specify .c file e.g putchar function to putchar.c 
+
+
+
+
+_putchar.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int _putchar(char c)
+{
+    return putchar(c);
+}
+
+
+
+
+
+
+
+3-islower.c
+
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int _islower(int c)
+{
+    return (c >= 'a' && c <= 'z');
+}
+
+
+
+
+
+
+
+4-isalpha.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int _isalpha(int c)
+{
+    return isalpha(c);
+}
+
+
+
+
+
+6-abs.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int _abs(int n)
+{
+    return abs(n)
+;
+}
+
+
+0-isupper.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int _isupper(int c)
+{
+    return (c >= 'A' && c <= 'Z');
+}
+
+
+
+
+1-isdigit.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int _isdigit(int c)
+{
+    return isdigit(c);
+}
+
+
+
+
+2-strlen.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int _strlen(char *s)
+{
+    return strlen(s);
+}
+
+
+
+
+3-puts.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+void _puts(char *s)
+{
+    puts(s);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+9-strcpy.c
+
+
+
+
+
+
+
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+char _strcpy(char dest, char *src)
+{
+    return strcpy(dest, src);
+}
+
+
+
+
+100-atoi.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+int _atoi(char *s)
+
+{
+    return atoi(s);
+}
+
+
+
+
+
+0-strcat.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char _strcat(char dest, char *src)
+{
+    return strcat(dest, src);
+}
+
+
+
+
+1-strncat.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char _strncat(char dest, char *src, int n)
+{
+    return strncat(dest, src, n);
+}
+
+
+
+
+
+
+
+
+
+
+2-strncpy.c
+
+
+
+
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char _strncpy(char dest, char *src, int n)
+{
+    return strncpy(dest, src, n);
+}
+
+
+
+
+3-strcmp.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int _strcmp(char s1, char s2)
+{
+    return strcmp(s1, s2);
+}
+
+
+
+
+
+0-memset.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char _memset(char s, char b, unsigned int n)
+{
+    return memset(s, b, n);
+}
+
+
+
+
+
+1-memcpy.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char _memcpy(char dest, char *src, unsigned int n)
+{
+    return memcpy(dest, src, n);
+}
+
+
+
+
+
+
+
+
+2-strchr.c
+
+
+
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char _strchr(char s, char c)
+{
+    return strchr(s, c);
+}
+
+
+
+
+
+
+3-strspn.c
+
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+unsigned int _strspn(char s, char accept)
+{
+    return strspn(s, accept);
+}
+
+
+
+
+4-strpbrk.c
+
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char _strpbrk(char s, char *accept)
+{
+    return strpbrk(s, accept);
+}
+
+
+5-strstr.c
+
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+char _strstr(char haystack, char *needle)
+{
+    return strstr(haystack, needle);
+}
+
+
+
+ Step 3: To create the static library libmy.a, you will need to compile all of the functions listed above into object files, and then use the ar utility to combine them into a single static library.
+gcc -c 0-isupper.c -o 0-isupper.o
+gcc -c 0-memset.c -o 0-memset.o
+gcc -c 0-strcat.c -o 0-strcat.o
+gcc -c 1-isdigit.c -o 1-isdigit.o
+gcc -c 1-memcpy.c -o 1-memcpy.o
+gcc -c 1-strncat.c -o 1-strncat.o
+gcc -c 100-atoi.c -o 100-atoi.o
+gcc -c 2-strchr.c -o 2-strchr.o
+gcc -c 2-strlen.c -o 2-strlen.o
+gcc -c 2-strncpy.c -o 2-strncpy.o
+gcc -c 3-islower.c -o 3-islower.o
+gcc -c 3-puts.c -o 3-puts.o
+gcc -c 3-strcmp.c -o 3-strcmp.o
+gcc -c 3-strspn.c -o 3-strspn.o
+gcc -c 4-isalpha.c -o 4-isalpha.o
+gcc -c 4-strpbrk.c -o 4-strpbrk.o
+gcc -c 5-strstr.c -o 5-strstr.o
+gcc -c 6-abs.c -o 6-abs.o
+gcc -c 9-strcpy.c -o 9-strcpy.o
+gcc -c putchar.c -o putchar.o
+
+
+
+Step 4
+
+ar -rcs libmy.a 0-isupper.o 0-memset.o 0-strcat.o 1-isdigit.o 1-memcpy.o 1-strncat.o 100-atoi.o 2-strchr.o 2-strlen.o 2-strncpy.o 3-islower.o 3-puts.o 3-strcmp.o 3-strspn.o 4-isalpha.o 4-strpbrk.o 5-strstr.o 6-abs.o 9-strcpy.o _putchar.o
+
+Step 5
+ar -t libmy.a
+
+Step 6
+nm libmy.a
+
+
+Step 7 create main.c file using vi main.c then paste the code
+
+#include "main.h"
+
+int main(void)
+{
+    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+    return (0);
+}
+
+Step 8
+ gcc -std=gnu89 main.c -L. -lmy -o quote
+
+
+
+
+Step 9
+
+./quote
+
+
+Step 10 
+git add libmy.a
+ Commit and push
+
+git add main.h
+ Commit and push
+
+git add README.md
+ Commit and push
+
