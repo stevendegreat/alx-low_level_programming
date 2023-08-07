@@ -41,9 +41,10 @@ i++;
 }
 
 if (f == 0)
-return (n);
-/* Add a return statement if 'f' is not 0 (for safety) */
-return (n);
+return n;
+
+/* Add a return statement if 'f' is not 0 (for safety)*/
+return n;
 }
 
 /**
@@ -59,8 +60,8 @@ int result, num1, num2;
 
 if (argc != 3)
 {
-printf("Error: Usage: %s <num1> <num2>\n", argv[0]);
-return (1);
+printf("Error\n");
+return 1;
 }
 
 num1 = _atoi(argv[1]);
@@ -68,5 +69,5 @@ num2 = _atoi(argv[2]);
 result = num1 * num2;
 
 printf("%d\n", result);
-return (0);
+return 0;
 }
