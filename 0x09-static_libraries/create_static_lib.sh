@@ -1,15 +1,4 @@
-#include "main.h"
-#include <stdio.h>
-
-/**
- * main - Prints the number of args
- * @argc: argument count
- * @argv: argument vector
- * Return: always 0
- */
-int main(int argc, char *argv[])
-{
-        (void) argv;
-        printf("%d\n", argc - 1);
-        return (0);
-}
+#!/bin/bash
+gcc -Wall -pedantic -Werror -Wextra  -c *.c
+ar .rc liball.a *.o
+ranlib liball.a
