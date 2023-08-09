@@ -4,11 +4,12 @@
 #include <string.h>
 
 /**
- ⦁create_array - create an array of chars
- ⦁@size: the size of the array
- ⦁@c: the char to fill in the array
- ⦁ 
- ⦁Return: the array filled
+ *@brief create an array of chars
+ *
+ * @param size: the size of the array
+ * @param c: the char to fill in the array
+ *
+ * @return the array filled
  */
 char *create_array(unsigned int size, char c)
 {
