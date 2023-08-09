@@ -10,7 +10,6 @@
  ⦁ 
  ⦁Return: the array filled
  */
-
 char *create_array(unsigned int size, char c)
 {
 char *s;
@@ -24,5 +23,5 @@ printf("Memory allocation failed\n");
 exit(1);
 }
 memset(s, (int) c, size);
-return(s);
+return (s);
 }
