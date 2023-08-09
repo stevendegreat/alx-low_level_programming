@@ -3,12 +3,11 @@
 #include "main.h"
 
 /**
- ⦁main - multiplies two numbers
+ ⦁ main - multiplies two numbers
+ ⦁ @argc: number of arguments
+ ⦁ @argv: array of arguments
  ⦁ 
- @argc: number of arguments
- ⦁@argv: array of arguments
- ⦁ 
- ⦁Return: always 0 (Success) or 1 (Error)
+ ⦁ Return: always 0 (Success) or 1 (Error)
  */
 int main(int argc, char *argv[])
 {
