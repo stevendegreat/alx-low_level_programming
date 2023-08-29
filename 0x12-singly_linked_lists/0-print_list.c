@@ -8,15 +8,17 @@
 */
 size_t print_list(const list_t *h)
 {
-size_t count = 0; /* Variable to store the number of nodes printed */
-const list_t *node; /* Pointer to traverse the list */
+size_t s = 0;
 
-/* Loop through the list until the end */
-for (node = h; node != NULL; node = node->next)
+while (h)
 {
-/* Print the length and the string of each node */
-printf("[%u] %s\n", node->len, node->str ? node->str : "(nil)");
-count++; /* Increment the count */
+if (!h->str)
+printf("[0] (nil)\n");
+else
+printf("[%u] %s\n", h->len, h->str);
+h = h->next;
+s++;
 }
-return count; /* Return the count */
+
+return (s);
 }
