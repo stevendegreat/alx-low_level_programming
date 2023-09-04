@@ -1,9 +1,8 @@
 #include "main.h"
 
-/**
- * print_binary - Prints the binary representation of a decimal number using recursion.
- *
- * @n: The decimal number to print in binary.
+**
+ * print_binary - Prints the binary representation of an unsigned long integer.
+ * @n: The number to be printed in binary.
  */
 void print_binary(unsigned long int n)
 {
@@ -16,17 +15,12 @@ current = n >> i;
 
 if (current & 1)
 {
-_putchar('1'); /*Output a '1' if the current bit is 1.*/
+_putchar('1');
 count++;
 }
 else if (count)
-{
-_putchar('0'); /*Output a '0' if there was at least one '1' before.*/
+_putchar('0');
 }
-}
-
 if (!count)
-{
-_putchar('0'); /*Output '0' if the input number was 0.*/
-}
+_putchar('0');
 }
