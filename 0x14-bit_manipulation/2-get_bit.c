@@ -5,7 +5,7 @@
  * a function that returns the value of a bit at a given index.
  * @n: number to search
  * @index: index of the bit
- * corded by stedegreat
+ * coded by stedegreat
  * Return: value of the bit
  */
 int get_bit(unsigned long int n, unsigned int index)

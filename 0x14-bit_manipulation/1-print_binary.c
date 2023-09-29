@@ -3,7 +3,7 @@
 /**
  * print_binary - prints the binary equivalent of a decimal number
  * the program prints the binary equivalent of a decimal number
- *  corded by stevedegreat
+ * coded by stevedegreat
  * @n: number to print in binary
  */
 void print_binary(unsigned long int n)
