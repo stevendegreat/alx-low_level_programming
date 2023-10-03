@@ -7,7 +7,7 @@
  *
  * coded by stevedegreat
  *
- * Return: If the function fails - -1.
+ * Return: If the function fails - -1
  *         Otherwise - 1.
  */
 
