@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * create_file - Creates a file.
- * a function that creates a file.
- * @filename: A pointer to the name of the file to create.
+ * Create a function that creates a file.
  * @text_content: A pointer to a string to write to the file.
+ * @filename: A pointer to the name of the file to create.
  * coded by stevedegreat
- * Return: If the function fails - -1
- *         Otherwise - 1.       
+ * Return: If the function fails - -1.
+ *         Otherwise - 1.
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -29,6 +28,5 @@ if (fd == -1 || w == -1)
 return (-1);
 
 close(fd);
-
 return (1);
 }
